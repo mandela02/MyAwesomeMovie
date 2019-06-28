@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="movie.wayne.com.myawesomemovie">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/robin"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.Activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".UI.Activity.PersonActivity"
+            android:label="@string/title_activity_person" />
+        <activity android:name=".UI.Activity.ReviewActivity" />
+        <activity android:name=".UI.Activity.FullCreditActivity" />
+        <activity android:name=".UI.Activity.TrailerListActivity" />
+        <activity
+            android:name=".UI.Activity.TrueMainActivity"
+            android:label="@string/title_activity_true_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UI.Activity.MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UI.Activity.MovieTrailerActivity" />
+        <activity android:name=".UI.Activity.LoginActivity">
+        </activity>
+    </application>
+
+</manifest>

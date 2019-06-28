@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "342944141187",
+    "firebase_url": "https://myawesomemovie.firebaseio.com",
+    "project_id": "myawesomemovie",
+    "storage_bucket": "myawesomemovie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342944141187:android:7b741dcb0901d666",
+        "android_client_info": {
+          "package_name": "movie.wayne.com.myawesomemovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342944141187-n6iavm5npr6p27qsg3ovfd64fdnkg8ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "movie.wayne.com.myawesomemovie",
+            "certificate_hash": "5276655fcff2b79b1c6a2bfa882705789197c36b"
+          }
+        },
+        {
+          "client_id": "342944141187-5983tfgj1s0aevpu8u9v1qcd449qdud2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo9NC1aarQGwc_aqvKMxA6xSyjtCAUgTM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342944141187-5983tfgj1s0aevpu8u9v1qcd449qdud2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

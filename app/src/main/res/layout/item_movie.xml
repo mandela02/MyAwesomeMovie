@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_5"
+
+    android:id="@+id/card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160">
+
+        <ImageView
+            android:id="@+id/image_face"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_150"
+            android:layout_margin="@dimen/dp_5"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_5"
+            app:srcCompat="@drawable/ic_white_like"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/dp_170"
+            android:layout_height="@dimen/dp_30"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/image_face"
+            android:gravity="center_vertical"
+            android:text="hello"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/text_vote"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="6.6"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp"
+                />
+
+            <ImageView
+                android:id="@+id/image_star"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_star"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_genre"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_20"
+            android:layout_below="@id/text_title"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/image_face"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="hello"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:layout_below="@id/text_title"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/text_genre"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="20.10"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/text_more"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/image_face"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Read more ..."
+            android:textColor="@android:color/black"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_160"
+            android:layout_above="@id/text_more"
+            android:layout_below="@id/text_genre"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_toRightOf="@id/image_face"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="hello"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
